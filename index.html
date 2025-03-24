@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sebastian Pillinger – Fotografie für Hochzeiten, Events und Unternehmen in Graz. Jetzt anfragen!">
+    <meta name="keywords" content="Fotograf, Hochzeitsfotografie, Eventfotografie, Graz, Sebastian Pillinger">
+    <meta property="og:title" content="Sebastian Pillinger – Fotografie">
+    <meta property="og:description" content="Fotografie für Hochzeiten, Events und Unternehmen in Graz. Jetzt anfragen!">
+    <meta property="og:image" content="https://www.deinewebsite.de/bilder/header.jpg">
+    <meta property="og:url" content="https://www.deinewebsite.de">
+    <title>Sebastian Pillinger – Fotografie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">    
+</head>
+<body>
+    <!-- Hauptnavigation -->
+    <nav aria-label="Hauptnavigation" id="main-nav">
+        <a href="#portfolio">Portfolio</a>
+		<a href="#about">Über mich</a>
+        <a href="#services">Leistungen</a>
+        <a href="#testimonials">Kundenfeedback</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+    
+    <header>
+        <h1>Sebastian Pillinger Photography</h1>
+    </header>
+    
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-section" id="portfolio-gallery">
+            <!-- Bilder werden dynamisch geladen -->
+        </div>
+    </section>
+	
+	<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+		<span class="lightbox-arrow left" onclick="event.stopPropagation(); changeImage(-1)">&#10094;</span>
+		<img src="" alt="Vergrößertes Bild" id="lightbox-img">
+		<span class="lightbox-arrow right" onclick="event.stopPropagation(); changeImage(1)">&#10095;</span>
+	</div>
+	
+	<!-- Über mich -->
+    <section id="about">
+        <h2>Über mich</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>Hallo, ich bin Sebastian Pillinger, ein 33-jähriger Fotograf aus Graz. Seit 2025 bin ich selbstständig und blicke auf über 10 Jahre Erfahrung in der Fotografie zurück.</p>
+                <p>Meine Leidenschaft gilt der kreativen Gestaltung von Momenten – ob bei Hochzeiten, Events oder industriellen Projekten. Ich arbeite regelmäßig mit professionellen Fotografen zusammen und liebe es, Geschichten durch meine Bilder zu erzählen.</p>
+                <a href="#contact" class="cta-button" aria-label="Kontaktiere mich">Kontaktiere mich</a>
+            </div>
+            <div class="about-image">
+                <img src="bilder/portrait.jpg" alt="Sebastian Pillinger" loading="lazy">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Leistungen -->
+    <section id="services">
+        <h2>Leistungen</h2>
+        <ul style="list-style-type: none; font-size: 1.6em;">
+            <li>Hochzeitsfotografie</li>
+            <li>Event- und Partyfotografie</li>
+            <li>Unternehmensfotografie</li>
+            <li>Hotelfotografie</li>
+            <li>Industrie- und Architekturfotografie</li>
+        </ul>
+    </section>
+    
+    <!-- Kundenfeedback -->
+    <section id="testimonials">
+        <h2>Kundenfeedback</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"Sebastian hat unsere Hochzeit perfekt festgehalten. Die Fotos sind atemberaubend!"</p>
+                <cite>– Anna und Markus</cite>
+            </div>
+            <div class="testimonial">
+                <p>"Professionelle Arbeit und eine Freude, mit ihm zusammenzuarbeiten."</p>
+                <cite>– Eventagentur Graz</cite>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Kontakt -->
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Ich freue mich über deine Anfrage!</p>
+        <p>Email: <span class="contact-link" onclick="copyToClipboard('sebastian.pillinger@gmx.at')">sebastian.pillinger@gmx.at</span></p>
+        <p>Telefon: <span class="contact-link" onclick="copyToClipboard('+43 677 62026186')">+43 677 62026186</span></p>
+        <p>
+            <a href="https://instagram.com/vergrazt" target="_blank" class="contact-link">Instagram</a> | 
+            <a href="https://facebook.com/yourprofile" target="_blank" class="contact-link">Facebook</a> | 
+            <a href="https://twitter.com/yourprofile" target="_blank" class="contact-link">Twitter</a>
+        </p>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sebastian Pillinger – Alle Rechte vorbehalten</p>
+        <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
